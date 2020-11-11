@@ -11,10 +11,12 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/estilo.css">
 	<style type="text/css">
-		body
+		html, body
 		{
-			background-color: #000
+			box-sizing: inherit;
+			background: linear-gradient(to left, #E8FFF9 , #eef2f3);
 		}
 		.blanco
 		{
@@ -24,24 +26,28 @@
 		{
 			color: #fff;
 		}
+		.negroletra
+		{
+			color: #000;
+		}
 	</style>
 </head>
 <body>
-<div class="container mt-3">
+<div class="container mt-3 ">
 	<div name="sumar">
 		<div class="row">
 			<div class="col-lg-2"></div>
 			<div class="col-sm-12 col-lg-9">
-				<h1 class="pl-3"><span class="blancoletra">Cotizador de Mega Hosting Sv y PlanetHost</span></h1>
+				<h1 class="pl-3"><span class="negroletra">Cotizador de Mega Hosting Sv y PlanetHost</span></h1>
 			</div>
 		</div>
 		<div class="row mt-5">
 			<div class="col-lg-5 blanco p-2">
 				<h5 class="ml-4">Selecciona el tipo de base de datos que deseas</h5>
 				<div class="row">
-					<div class="col-lg-3"></div>
-					<div class="col-lg-5">
-						<select name="TipodeBasededatos" id="TipodeBasededatos" onchange="fncSumar();">
+					<div class="col-lg-2"></div>
+					<div class="col-lg-7">
+						<select class="select-css" name="TipodeBasededatos" id="TipodeBasededatos" onchange="fncSumar();">
 
 							<option value="0">Seleccione una opcion</option>
 							<option value="1">Ninguna (Gratis)</option>
@@ -55,10 +61,10 @@
 			<div class="col-lg-2"></div>
 			<div class="col-lg-5 blanco p-2">
 				<h5 class="ml-5">Selecciona la cantidad de slots que deseas</h5>
-				<div class="row ml-3">
+				<div class="row">
 					<div class="col-lg-3"></div>
-					<div class="col-lg-2">
-						<select id="Slots" name="Slots" onchange="fncSumar();">
+					<div class="col-lg-7">
+						<select class="select-css" id="Slots" name="Slots" onchange="fncSumar();">
 
 						<option value="0">Seleccione una opcion</option>
 						<option value="1">50 ($0.10 ctvs)</option>
@@ -81,10 +87,10 @@
 		<div class="row mt-5">
 			<div class="col-lg-5 blanco p-2">
 				<h5 class="ml-4">Selecciona la cantidad de RAM que deseas</h5>
-				<div class="row ml-3">
-					<div class="col-lg-3"></div>
-					<div class="col-lg-5">
-						<select name="RAM" id="RAM" onchange="fncSumar();">
+				<div class="row">
+					<div class="col-lg-2"></div>
+					<div class="col-lg-7">
+						<select class="select-css" name="RAM" id="RAM" onchange="fncSumar();">
 
 						<option value="0">Seleccione una opcion</option>
 						<option value="1">128 MB ($0.20 ctvs)</option>
@@ -102,10 +108,10 @@
 			<div class="col-lg-2"></div>
 			<div class="col-lg-5 blanco p-2">
 				<h5 class="ml-5">Selecciona el tipo de servidor que deseas</h5>
-				<div class="row ml-3">
+				<div class="row">
 					<div class="col-lg-3"></div>
-					<div class="col-lg-6">
-						<select name="TipodeServidor" id="TipodeServidor" onchange="fncSumar();">
+					<div class="col-lg-7">
+						<select class="select-css" name="TipodeServidor" id="TipodeServidor" onchange="fncSumar();">
 
 						<option value="1">Seleccione una opcion</option>
 						<option value="2">Servidor dedicado ($2 dolares)</option>
@@ -119,10 +125,10 @@
 		<div class="row mt-5">
 			<div class="col-lg-5 blanco p-2">
 				<h5 class="ml-1">Selecciona la cantidad de bases de datos que deseas</h5>
-				<div class="row ml-5">
-					<div class="col-lg-1 ml-4"></div>
-					<div class="col-lg-4">
-						<select name="CantidadBasededatos" id="CantidadBasededatos" onchange="fncSumar();">
+				<div class="row">
+					<div class="col-lg-2 "></div>
+					<div class="col-lg-7">
+						<select class="select-css" name="CantidadBasededatos" id="CantidadBasededatos" onchange="fncSumar();">
 
 						<option value="0">Seleccione una opcion</option>
 						<option value="1">0 (Gratis)</option>
@@ -139,10 +145,10 @@
 			<div class="col-lg-2"></div>
 			<div class="col-lg-5 blanco">
 				<h5 class="ml-1">Selecciona la cantidad de almacenamiento que deseas</h5>
-				<div class="row ml-2">
+				<div class="row">
 					<div class="col-lg-3"></div>
-					<div class="col-lg-2">
-						<select name="Almacenamiento" id="Almacenamiento" onchange="fncSumar();">
+					<div class="col-lg-7">
+						<select class="select-css" name="Almacenamiento" id="Almacenamiento" onchange="fncSumar();">
 
 						<option value="0">Seleccione una opcion</option>
 						<option value="1">100 MB ($0.10 ctvs)</option>
@@ -152,6 +158,43 @@
 						<option value="5">500 MB ($0.50 ctvs)</option>
 						<option value="6">600 MB ($0.60 ctvs)</option>
 						<option value="7">700 MB ($0.70 ctvs)</option>
+
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row mt-5">
+			<div class="col-lg-5 blanco p-2">
+				<h5 class="ml-1">Selecciona el tipo de puerto que deseas</h5>
+				<div class="row">
+					<div class="col-lg-2"></div>
+					<div class="col-lg-7">
+						<select class="select-css" name="Puerto" id="Puerto" onchange="fncSumar();">
+
+						<option value="0">Seleccione una opcion</option>
+						<option value="1">Aleatorio ($0.50 ctvs)</option>
+						<option value="2">Igual ($1 dolar )</option>
+						<option value="3">7777 ($2 dolares segun disponibilidad)</option>
+
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-2"></div>
+			<div class="col-lg-5 blanco">
+				<h5 class="ml-1">Selecciona la cantidad de slots para NPC que deseas</h5>
+				<div class="row">
+					<div class="col-lg-3"></div>
+					<div class="col-lg-7">
+						<select class="select-css" name="NPC" id="NPC" onchange="fncSumar();">
+
+						<option value="0">Seleccione una opcion</option>
+						<option value="1">0 (Gratis)</option>
+						<option value="2">10 ($0.20 ctvs)</option>
+						<option value="3">20 ($0.30 ctvs)</option>
+						<option value="4">30 ($0.40 ctvs)</option>
+						<option value="5">40 ($0.50 ctvs)</option>
 
 						</select>
 					</div>
@@ -349,8 +392,50 @@
 			{
 				CantidadBasededatos = 0.5;
 			}
+			Puerto = document.getElementById("Puerto").value;
+			if(Puerto == "0")
+			{
+				Puerto = 0;
+			}
+			if(Puerto == "1")
+			{
+				Puerto = 0.5;
+			}
+			if(Puerto == "2")
+			{
+				Puerto = 1;
+			}
+			if(Puerto == "3")
+			{
+				Puerto = 2;
+			}
+			NPC = document.getElementById("NPC").value;
+			if(NPC == "0")
+			{
+				NPC = 0;
+			}
+			if(NPC == "1")
+			{
+				NPC = 0;
+			}
+			if(NPC == "2")
+			{
+				NPC = 0.2;
+			}
+			if(NPC == "3")
+			{
+				NPC = 0.3;
+			}
+			if(NPC == "4")
+			{
+				NPC = 0.4;
+			}
+			if(NPC == "5")
+			{
+				NPC = 0.5;
+			}
 
-			resultado=TipodeBasededatos+Slots+RAM+TipodeServidor+Almacenamiento+CantidadBasededatos;
+			resultado=TipodeBasededatos+Slots+RAM+TipodeServidor+Almacenamiento+CantidadBasededatos+Puerto+NPC;
 
 			parseFloat(resultado).toFixed(2);
 			if(!isNaN(resultado))
